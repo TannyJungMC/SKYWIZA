@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skywiza:block/quest_board",
+    "particle": "skywiza:block/quest_board"
+  },
+  "render_type": "cutout"
+}

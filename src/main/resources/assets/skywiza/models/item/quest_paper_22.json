@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skywiza:item/quest_paper_22"
+  }
+}

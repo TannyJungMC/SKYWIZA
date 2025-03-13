@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="skywiza"
+version="9.0.0"
+displayName="SKYWIZA"
+displayURL="https://www.curseforge.com/members/tannyjung/projects"
+logoFile="logo.png"
+credits="Created with MCreator"
+authors="TannyJung"
+description="SKYWIZA mod is a server-simulation mod. This mod inspired by RPG system from server and other games, the main goal is to improve the minecraft world more alive, even in singleplayer."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.skywiza]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

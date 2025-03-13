@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "skywiza:block/spawner"
+    }
+  }
+}

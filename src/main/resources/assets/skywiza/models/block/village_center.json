@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skywiza:block/village_center",
+    "particle": "skywiza:block/village_center"
+  },
+  "render_type": "cutout"
+}

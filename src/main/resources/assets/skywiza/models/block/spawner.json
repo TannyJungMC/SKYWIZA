@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skywiza:block/pacel_box",
+    "particle": "skywiza:block/pacel_box"
+  },
+  "render_type": "cutout"
+}

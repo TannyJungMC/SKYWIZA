@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skywiza:item/spawner_remover"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,306 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_titl",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnTitle"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 32
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc1",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc2",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 56
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_requ",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnRequester"
+          },
+          "color": {
+            "value": -6737152,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_requ1",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnRequestDate"
+          },
+          "color": {
+            "value": -6737152,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_end",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnEndDate"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 216
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_rewa",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnReward"
+          },
+          "color": {
+            "value": -3368704,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 172
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "paper.png",
+          "use1Xscale": false,
+          "x": 134,
+          "y": 8
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_wax_seal",
+          "image": "wax_seal.png",
+          "hoveredImage": "",
+          "x": 254,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc3",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription4"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc4",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription5"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rank_e",
+          "image": "rank_e.png",
+          "hoveredImage": "",
+          "x": 262,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc5",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription6"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc6",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription7"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc7",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription8"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc8",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription9"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_quest_paper_gu_ireturn_desc9",
+          "text": {
+            "fixedValue": "",
+            "name": "QuestPaperGUIreturnDescription10"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 140
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_reward",
+          "text": {
+            "fixedValue": "Reward"
+          },
+          "color": {
+            "value": -6724096,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 160
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skywiza:item/village_location"
+  },
+  "render_type": "translucent"
+}

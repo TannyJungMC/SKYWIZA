@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skywiza:block/spawner_remover",
+    "particle": "skywiza:block/spawner_remover"
+  },
+  "render_type": "cutout"
+}

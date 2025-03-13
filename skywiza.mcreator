@@ -1,0 +1,3160 @@
+{
+  "mod_elements": [
+    {
+      "name": "Start",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/StartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "GoldenCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/golden_coin.json",
+          "src/main/java/net/mcreator/skywiza/item/GoldenCoinItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SilverCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/SilverCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/silver_coin.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "SpawnerRemoverPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_remover_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerRemoverPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner/Remover"
+    },
+    {
+      "name": "WoodenCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/WoodenCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/wooden_coin.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DiamondCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/diamond_coin.json",
+          "src/main/java/net/mcreator/skywiza/item/DiamondCoinItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "StoneCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/StoneCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/stone_coin.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "QuestPaper11",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_11",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper11Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_11.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper12",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_12",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper12Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_12.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper13",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_13",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_13.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper13Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper14",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_14",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_14.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper14Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper15",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_15",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper15Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_15.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper16",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_16",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper16Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_16.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper21",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_21",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_21.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper21Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper22",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_22",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper22Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_22.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper31",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_31",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_31.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper31Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper41",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_41",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper41Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_41.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper51",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_51",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_51.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper51Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper32",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_32",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper32Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_32.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper61",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_61",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper61Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_61.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper62",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_62",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_62.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper62Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper71",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_71",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper71Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_71.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "SkywizaTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skywiza_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "QuestPaper42",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_42",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_42.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper42Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "SpawnerRespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerRespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "CloseGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CloseGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "LootChestRefill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_refill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestRefillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "LootChestRemover",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_remover",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/blockstates/loot_chest_remover.json",
+          "src/main/java/net/mcreator/skywiza/block/LootChestRemoverBlock.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/loot_chest_remover.json",
+          "src/main/resources/assets/skywiza/models/item/loot_chest_remover.json",
+          "src/main/resources/assets/skywiza/models/block/loot_chest_remover.json"
+        ]
+      },
+      "path": "~/Loot Chest/Remover"
+    },
+    {
+      "name": "LootChestRemoverPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_remover_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestRemoverPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Loot Chest/Remover"
+    },
+    {
+      "name": "LootChest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/skywiza/loot_tables/blocks/loot_chest.json",
+          "src/main/resources/assets/skywiza/blockstates/loot_chest.json",
+          "src/main/java/net/mcreator/skywiza/block/LootChestBlock.java",
+          "src/main/resources/assets/skywiza/models/block/loot_chest.json",
+          "src/main/resources/assets/skywiza/models/item/loot_chest.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/LootChestBlockEntity.java"
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "LootChestPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "QuestBoardPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestBoardPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quest/Quest Board"
+    },
+    {
+      "name": "QuestBoardReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestBoardResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quest/Quest Board"
+    },
+    {
+      "name": "QuestBoardTimeStamp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board_time_stamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestBoardTimeStampProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quest/Quest Board"
+    },
+    {
+      "name": "QuestBoardRemover",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board_remover",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/block/quest_board_remover.json",
+          "src/main/java/net/mcreator/skywiza/block/QuestBoardRemoverBlock.java",
+          "src/main/resources/assets/skywiza/blockstates/quest_board_remover.json",
+          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board_remover.json",
+          "src/main/resources/assets/skywiza/models/item/quest_board_remover.json"
+        ]
+      },
+      "path": "~/Quest/Remover"
+    },
+    {
+      "name": "QuestBoardRemoverPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board_remover_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestBoardRemoverPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quest/Remover"
+    },
+    {
+      "name": "Spawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/spawner.json",
+          "src/main/resources/assets/skywiza/blockstates/spawner.json",
+          "src/main/resources/assets/skywiza/models/block/spawner.json",
+          "src/main/java/net/mcreator/skywiza/block/SpawnerBlock.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/spawner.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/SpawnerBlockEntity.java"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "QuestBoard",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/block/quest_board.json",
+          "src/main/resources/assets/skywiza/blockstates/quest_board.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/QuestBoardBlockEntity.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board.json",
+          "src/main/resources/assets/skywiza/models/item/quest_board.json",
+          "src/main/java/net/mcreator/skywiza/block/QuestBoardBlock.java"
+        ]
+      },
+      "path": "~/Quest/Quest Board"
+    },
+    {
+      "name": "ConfigRepair",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config_repair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/ConfigRepairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "TxtFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TxtFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "ConfigRepair2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config_repair_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/ConfigRepair2Procedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "QuestPaper72",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_72",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper72Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_72.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper23",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_23",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_23.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper23Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper17",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_17",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper17Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_17.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper18",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_18",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper18Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_18.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper63",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_63",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper63Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_63.json"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "QuestPaper52",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_52",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/quest_paper_52.json",
+          "src/main/java/net/mcreator/skywiza/item/QuestPaper52Item.java"
+        ]
+      },
+      "path": "~/Quest/Item"
+    },
+    {
+      "name": "LoopTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loop_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LoopTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "Command",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/command/CommandCommand.java"
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "RealTimeCountdown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "real_time_countdown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/RealTimeCountdownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "SpawnerPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerRespawnForce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_respawn_force",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerRespawnForceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "CommandTimeDetectionGameTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_time_detection_game_time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CommandTimeDetectionGameTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "CommandTimeDetectionRealTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_time_detection_real_time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CommandTimeDetectionRealTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "QuestPaperGUIreturnTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnTitleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/client/gui/QuestPaperGUIScreen.java",
+          "src/main/java/net/mcreator/skywiza/world/inventory/QuestPaperGUIMenu.java"
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_iopen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIopenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescriptionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnRequester",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_requester",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnRequesterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnRequestDate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_request_date",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnRequestDateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnEndDate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_end_date",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnEndDateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnReward",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_reward",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnRewardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_6",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_7",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_8",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_9",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "QuestPaperGUIreturnDescription10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_paper_gu_ireturn_description_10",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/QuestPaperGUIreturnDescription10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quest"
+    },
+    {
+      "name": "Npc",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/entity/NpcEntity.java",
+          "src/main/resources/assets/skywiza/models/item/npc_spawn_egg.json",
+          "src/main/java/net/mcreator/skywiza/client/renderer/NpcRenderer.java"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "LongTimeLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_time_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LongTimeLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Other"
+    },
+    {
+      "name": "NpcGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/client/gui/NpcGUIScreen.java",
+          "src/main/java/net/mcreator/skywiza/world/inventory/NpcGUIMenu.java"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/block/entity/NpcBlockBlockEntity.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/npc_block.json",
+          "src/main/resources/assets/skywiza/models/block/npc_block.json",
+          "src/main/resources/assets/skywiza/models/item/npc_block.json",
+          "src/main/java/net/mcreator/skywiza/block/NpcBlockBlock.java",
+          "src/main/resources/assets/skywiza/blockstates/npc_block.json"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "VillageManagerClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_manager_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageManagerClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageManager",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_manager",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/village_manager.json",
+          "src/main/java/net/mcreator/skywiza/item/VillageManagerItem.java"
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "NpcBlockPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_block_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcBlockPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcSkinSteve",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_skin_steve",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcSkinSteveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/NPC/Skin"
+    },
+    {
+      "name": "NpcSkinAlex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_skin_alex",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcSkinAlexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/NPC/Skin"
+    },
+    {
+      "name": "NpcGUI2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_gui_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/world/inventory/NpcGUI2Menu.java",
+          "src/main/java/net/mcreator/skywiza/client/gui/NpcGUI2Screen.java"
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "CoinPouch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_pouch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/CoinPouchItem.java",
+          "src/main/resources/assets/skywiza/models/item/coin_pouch.json",
+          "src/main/java/net/mcreator/skywiza/item/inventory/CoinPouchInventoryCapability.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CoinPouchGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_pouch_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/world/inventory/CoinPouchGUIMenu.java",
+          "src/main/java/net/mcreator/skywiza/client/gui/CoinPouchGUIScreen.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LootChestLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "ConfigApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config_apply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/ConfigApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Config and Command"
+    },
+    {
+      "name": "NpcSchedule",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_schedule",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcScheduleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcLoopTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_loop_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcLoopTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcLoopTickCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_loop_tick_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcLoopTickCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "VillageLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageCenterLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_center_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageCenterLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "SpawnerLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerRemover",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_remover",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/block/spawner_remover.json",
+          "src/main/resources/data/skywiza/loot_tables/blocks/spawner_remover.json",
+          "src/main/resources/assets/skywiza/models/item/spawner_remover.json",
+          "src/main/java/net/mcreator/skywiza/block/SpawnerRemoverBlock.java",
+          "src/main/resources/assets/skywiza/blockstates/spawner_remover.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/SpawnerRemoverBlockEntity.java"
+        ]
+      },
+      "path": "~/Spawner/Remover"
+    },
+    {
+      "name": "SpawnerMobLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_mob_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/SpawnerMobLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "LootChestRefillForce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_refill_force",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestRefillForceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "LootChestLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_chest_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/LootChestLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Loot Chest"
+    },
+    {
+      "name": "NpcLoopMinute",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_loop_minute",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcLoopMinuteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcScheduleFindPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_schedule_find_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcScheduleFindPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "NpcSchdulePathFixer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "npc_schdule_path_fixer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/NpcSchdulePathFixerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPC"
+    },
+    {
+      "name": "VillageInfo",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_info",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/block/entity/VillageInfoBlockEntity.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_info.json",
+          "src/main/resources/assets/skywiza/models/item/village_info.json",
+          "src/main/resources/assets/skywiza/blockstates/village_info.json",
+          "src/main/java/net/mcreator/skywiza/block/VillageInfoBlock.java",
+          "src/main/resources/assets/skywiza/models/block/village_info.json"
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageCenter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_center",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/block/VillageCenterBlock.java",
+          "src/main/resources/assets/skywiza/models/item/village_center.json",
+          "src/main/resources/assets/skywiza/blockstates/village_center.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/VillageCenterBlockEntity.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_center.json",
+          "src/main/resources/assets/skywiza/models/block/village_center.json"
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageCenterPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_center_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageCenterPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageInfoPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_info_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageInfoPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageLocation",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_location",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/block/VillageLocationBlock.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_location.json",
+          "src/main/resources/assets/skywiza/models/item/village_location.json",
+          "src/main/resources/assets/skywiza/blockstates/village_location.json",
+          "src/main/java/net/mcreator/skywiza/block/entity/VillageLocationBlockEntity.java",
+          "src/main/resources/assets/skywiza/models/block/village_location.json"
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageLocationLoopSecondCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_location_loop_second_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageLocationLoopSecondCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "VillageLocationPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_location_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/VillageLocationPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Village System"
+    },
+    {
+      "name": "PathStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "path_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/PathStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/Path Generator"
+    },
+    {
+      "name": "PathLoopTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "path_loop_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/PathLoopTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/Path Generator"
+    },
+    {
+      "name": "PathManager",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "path_manager",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/path_manager.json",
+          "src/main/java/net/mcreator/skywiza/item/PathManagerItem.java"
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/Path Generator"
+    },
+    {
+      "name": "PathManagerClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "path_manager_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/PathManagerClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/Path Generator"
+    },
+    {
+      "name": "PathEnd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "path_end",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/PathEndProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/Path Generator"
+    },
+    {
+      "name": "WorldGen",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_gen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/skywiza/worldgen/configured_feature/world_gen.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/.Testing/Structure and World Gen"
+    },
+    {
+      "name": "WorldGenLoopTickCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "worldgen_loop_tick_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/WorldGenLoopTickCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen"
+    },
+    {
+      "name": "TxtStructureExport",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_structure_export",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TxtStructureExportProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/TXT Structure"
+    },
+    {
+      "name": "TxtStructureManager",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_structure_manager",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skywiza/models/item/txt_structure_manager.json",
+          "src/main/java/net/mcreator/skywiza/item/TxtStructureManagerItem.java"
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/TXT Structure"
+    },
+    {
+      "name": "TxtStructureManagerClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_structure_manager_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TxtStructureManagerClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/TXT Structure"
+    },
+    {
+      "name": "TxtStructureManagerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_structure_manager_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TxtStructureManagerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/TXT Structure"
+    },
+    {
+      "name": "TxtStructurePlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txt_structure_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TxtStructurePlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/TXT Structure"
+    },
+    {
+      "name": "TestingStick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_stick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/TestingStickItem.java",
+          "src/main/resources/assets/skywiza/models/item/testing_stick.json"
+        ]
+      },
+      "path": "~/.Testing"
+    },
+    {
+      "name": "TestingStickTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_stick_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TestingStickTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing"
+    },
+    {
+      "name": "TestingStickClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_stick_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TestingStickClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing"
+    },
+    {
+      "name": "TestingCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/TestingCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing"
+    },
+    {
+      "name": "CityGeneratorManager",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_generator_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/item/CityGeneratorManagerItem.java",
+          "src/main/resources/assets/skywiza/models/item/city_generator_manager.json"
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/City Generator"
+    },
+    {
+      "name": "CityGeneratorManagerClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_generator_manager_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CityGeneratorManagerClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/City Generator"
+    },
+    {
+      "name": "CityGeneratorManagerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_generator_manager_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CityGeneratorManagerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/City Generator"
+    },
+    {
+      "name": "CityGeneratorBuilding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_generator_building",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CityGeneratorBuildingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/City Generator"
+    },
+    {
+      "name": "CityGeneratorLoopTickCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city_generator_loop_tick_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skywiza/procedures/CityGeneratorLoopTickCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/.Testing/Structure and World Gen/City Generator"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "debug_village",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "long_time",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "long_time_custom",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "long_time_offset",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "loop_second",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "loot_chest",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "loot_chest_show_name",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "quest_board_time_stamp",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "spawner",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "spawner_mob_show_name",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "spawner_respawn_force",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "spawner_show_name",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "loop_minute",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "loot_chest_refill_force",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "pathway_gen",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "txt_structure_manager_tick",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_posX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_posY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_posZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_pos2X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_pos2Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "txt_structure_pos2Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:mod:passable_blocks": [
+      "TAG:minecraft:replaceable",
+      "TAG:minecraft:replaceable_by_trees"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:SkywizaTab": [
+      "CoinPouch",
+      "GoldenCoin",
+      "SilverCoin",
+      "WoodenCoin",
+      "DiamondCoin",
+      "StoneCoin",
+      "QuestPaper11",
+      "QuestPaper12",
+      "QuestPaper13",
+      "QuestPaper14",
+      "QuestPaper15",
+      "QuestPaper16",
+      "QuestPaper17",
+      "QuestPaper18",
+      "QuestPaper21",
+      "QuestPaper22",
+      "QuestPaper23",
+      "QuestPaper31",
+      "QuestPaper32",
+      "QuestPaper41",
+      "QuestPaper42",
+      "QuestPaper51",
+      "QuestPaper52",
+      "QuestPaper61",
+      "QuestPaper62",
+      "QuestPaper63",
+      "QuestPaper71",
+      "QuestPaper72",
+      "LootChestRemover",
+      "LootChest",
+      "QuestBoardRemover",
+      "QuestBoard",
+      "SpawnerRemover",
+      "Spawner",
+      "NpcBlock",
+      "VillageInfo",
+      "VillageCenter",
+      "VillageLocation",
+      "VillageManager",
+      "PathManager",
+      "TxtStructureManager",
+      "TestingStick",
+      "CityGeneratorManager"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "block.skywiza.npc_block": "NPC (Unset)",
+      "gamerule.skywiza_custom_planting_time": "SKYWIZA-SpawnerGroupCount",
+      "block.skywiza.village_location": "Village Place (Unset)",
+      "block.skywiza.village_center": "Village Center (Unset)",
+      "gamerule.skywiza_spawner_mob_show_name.description": "Gamerule Config For SKYWIZA Mod",
+      "item.skywiza.quest_paper_52": "Woodworking Quest (Style 1)",
+      "gui.skywiza.quest_paper_gui.label_assignment": "Quest Details",
+      "item.skywiza.city_generator_manager": "City Generator Manager",
+      "gamerule.skywiza_world_lower_limit": "SKYWIZA-WorldHeightLimit",
+      "item.skywiza.quest_paper_11": "Hunting Quest (Style 1)",
+      "item.skywiza.testing_stick": "Testing Stick",
+      "gamerule.skywiza_custom_planting.description": "Gamerule Config For SKYWIZA Mod",
+      "item.skywiza.quest_paper_51": "Woodworking Quest (Style 1)",
+      "gamerule.skywiza_long_time.description": "Gamerule config for SKYWIZA mod",
+      "gamerule.skywiza_long_time_start_at.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_spawner_return_distance.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_spawner_group_count": "SKYWIZA-SpawnerCoinMultiplyEvent",
+      "gamerule.skywiza_world_height_limit.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_job_board_repeat_time": "SKYWIZA-SpawnerShowName",
+      "gamerule.skywiza_custom_planting_time.description": "Gamerule Config For SKYWIZA Mod",
+      "itemGroup.tabskywiza_tab": "SKYWIZA",
+      "block.skywiza.loot_chest_remover": "Loot Chest Remover",
+      "item.skywiza.quest_paper_41": "Farming Quest (Style 1)",
+      "block.skywiza.spawner_remover": "Spawner (Unset)",
+      "item.skywiza.quest_paper_42": "Farming Quest (Style 2)",
+      "block.skywiza.village_info": "Village Info",
+      "gamerule.skywiza_structure_test_level": "SKYWIZA-SpawnerGroupCount",
+      "gui.skywiza.quest_paper_gui.label_logo_here": "#wax seal",
+      "itemGroup.tab_skywiza_tab": "SKYWIZA",
+      "gui.skywiza.quest_paper_gui.label_reward": "Reward",
+      "gamerule.skywiza_custom_planting": "SKYWIZA-CustomPlantingTime",
+      "item.skywiza.wooden_coin": "Wooden Coin",
+      "gamerule.skywiza_spawner_group_count.description": "Gamerule config for SKYWIZA mod",
+      "gamerule.skywiza_world_height_limit": "SKYWIZA-SpawnerShowName",
+      "item.skywiza.quest_paper_31": "Resource Collecting Quest (Style 1)",
+      "item.skywiza.quest_paper_32": "Resource Collecting Quest (Style 2)",
+      "item.skywiza.txt_structure_manager": "TXT Structure Manager",
+      "gamerule.skywiza_support_tht": "SKYWIZA-SupportLOTW",
+      "item.skywiza.quest_paper_71": "Fishing Quest (Style 1)",
+      "gamerule.skywiza_structure_test_level.description": "Gamerule Config For SKYWIZA Mod",
+      "item.skywiza.golden_coin": "Golden Coin",
+      "gamerule.skywiza_spawner_show_name.description": "Gamerule config for SKYWIZA mod",
+      "item.skywiza.quest_paper_72": "Fishing Quest (Style 2)",
+      "item.skywiza.stone_coin": "Stone Coin",
+      "gamerule.skywiza_spawner_coin_multiply_event": "SKYWIZA-SpawnerCoinMultiply",
+      "gamerule.skywiza_start.description": "Gamerule config for SKYWIZA mod",
+      "gamerule.skywiza_custom_planting_chat_bubble_mode.description": "Gamerule Config For SKYWIZA Mod",
+      "item.skywiza.quest_paper_23": "Exploration Quest (Style 3)",
+      "block.skywiza.spawner": "Spawner (Unset)",
+      "gamerule.skywiza_spawner": "SKYWIZA-LongTime",
+      "block.skywiza.quest_board_remover": "Quest Board Remover",
+      "gamerule.skywiza_long_time_custom.description": "Gamerule config for SKYWIZA mod",
+      "item_group.skywiza.skywiza_tab": "SKYWIZA",
+      "gamerule.skywiza_spawner_coin_multiply_event.description": "Gamerule config for SKYWIZA mod",
+      "gamerule.skywiza_support_tht.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_world_lower_limit.description": "Gamerule Config For SKYWIZA Mod",
+      "item.skywiza.npc_spawn_egg": "NPC Spawn Egg",
+      "gamerule.skywiza_long_time": "SKYWIZA-JobBoardRepeatTime",
+      "gamerule.skywiza_long_time_start_at": "SKYWIZA-LongTimeCustom",
+      "block.skywiza.quest_board": "Quest Board (Unset)",
+      "item.skywiza.quest_paper_63": "Mining Quest (Style 3)",
+      "item.skywiza.silver_coin": "Silver Coin",
+      "item.skywiza.quest_paper_21": "Exploration Quest (Style 1)",
+      "item.skywiza.quest_paper_22": "Exploration Quest (Style 2)",
+      "gamerule.skywiza_long_time_custom": "SKYWIZA-LongTime",
+      "item.skywiza.quest_paper_61": "Mining Quest (Style 1)",
+      "block.skywiza.loot_chest": "Loot Chest (Unset)",
+      "item.skywiza.quest_paper_62": "Mining Quest (Style 2)",
+      "item.skywiza.quest_paper_16": "Hunting Quest (Style 6)",
+      "gamerule.skywiza_spawner_mob_show_name": "SKYWIZA-SpawnerShowName",
+      "item.skywiza.quest_paper_17": "Hunting Quest (Style 7)",
+      "item.skywiza.quest_paper_18": "Hunting Quest (Style 8)",
+      "item.skywiza.coin_pouch": "Coin Pouch",
+      "gamerule.skywiza_start": "SKYWIZA-SpawnerShowName",
+      "item.skywiza.quest_paper_12": "Hunting Quest (Style 2)",
+      "item.skywiza.quest_paper_13": "Hunting Quest (Style 3)",
+      "item.skywiza.quest_paper_14": "Hunting Quest (Style 4)",
+      "gamerule.skywiza_support_lotw": "SKYWIZA-Start",
+      "item.skywiza.quest_paper_15": "Hunting Quest (Style 5)",
+      "item.skywiza.village_manager": "Village Manager",
+      "gui.skywiza.quest_paper_gui.label_adventurers_guild": "Adventurer\u0027s Guild",
+      "gamerule.skywiza_job_board_repeat_time.description": "Gamerule config for SKYWIZA mod",
+      "gamerule.skywiza_custom_planting_chat_bubble_mode": "SKYWIZA-CustomPlantingTime",
+      "entity.skywiza.npc": "NPC",
+      "gamerule.skywiza_spawner_show_name": "SKYWIZA-SpawnerGroupCount",
+      "item.skywiza.diamond_coin": "Diamond Coin",
+      "gamerule.skywiza_support_lotw.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_spawner.description": "Gamerule Config For SKYWIZA Mod",
+      "gamerule.skywiza_spawner_return_distance": "SKYWIZA-CustomPlantingTime",
+      "item.skywiza.path_manager": "Pathway Manager"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": ".Config and Command",
+        "children": []
+      },
+      {
+        "name": "Spawner",
+        "children": [
+          {
+            "name": "Remover",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Quest",
+        "children": [
+          {
+            "name": "Item",
+            "children": []
+          },
+          {
+            "name": "Remover",
+            "children": []
+          },
+          {
+            "name": "Quest Board",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": ".Other",
+        "children": []
+      },
+      {
+        "name": "Loot Chest",
+        "children": [
+          {
+            "name": "Remover",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": ".Testing",
+        "children": [
+          {
+            "name": "Structure and World Gen",
+            "children": [
+              {
+                "name": "TXT Structure",
+                "children": []
+              },
+              {
+                "name": "City Generator",
+                "children": []
+              },
+              {
+                "name": "Path Generator",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NPC",
+        "children": [
+          {
+            "name": "Skin",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Village System",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "skywiza",
+    "modName": "SKYWIZA",
+    "version": "9.0.0",
+    "description": "SKYWIZA mod is a server-simulation mod. This mod inspired by RPG system from server and other games, the main goal is to improve the minecraft world more alive, even in singleplayer.",
+    "author": "TannyJung",
+    "websiteURL": "https://www.curseforge.com/members/tannyjung/projects",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "2022-03-21_22.55.59",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created with MCreator",
+    "modElementsPackage": "net.mcreator.skywiza"
+  },
+  "mcreatorVersion": 202400232117
+}
