@@ -1,9 +1,0 @@
-{
-  "feature": "skywiza:highway",
-  "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 1
-    }
-  ]
-}
