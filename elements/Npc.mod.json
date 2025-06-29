@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 77,
   "_type": "livingentity",
   "definition": {
     "mobName": "NPC",
@@ -41,6 +41,7 @@
         }
       }
     ],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 2.0,
     "modelShadowSize": 0.5,

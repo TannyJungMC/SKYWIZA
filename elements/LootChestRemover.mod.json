@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "loot_chest_remover",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Loot Chest Remover",
     "specialInformation": {
       "fixedValue": [
@@ -109,7 +110,6 @@
     "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

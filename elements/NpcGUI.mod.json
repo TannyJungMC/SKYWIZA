@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 77,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,7 +25,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 146,
-          "y": 48
+          "y": 48,
+          "locked": false
         }
       },
       {
@@ -43,7 +44,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 170,
-          "y": 48
+          "y": 48,
+          "locked": false
         }
       },
       {
@@ -61,7 +63,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 194,
-          "y": 48
+          "y": 48,
+          "locked": false
         }
       },
       {
@@ -70,7 +73,8 @@
           "image": "paper2.png",
           "use1Xscale": false,
           "x": 54,
-          "y": 8
+          "y": 8,
+          "locked": false
         }
       }
     ],

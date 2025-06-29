@@ -1,7 +1,0 @@
-{
-  "type": "skywiza:structure_feature",
-  "config": {
-    "structure": "skywiza:world_gen",
-    "ignored_blocks": "minecraft:air"
-  }
-}
