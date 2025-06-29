@@ -1,0 +1,9 @@
+# Project exclude paths
+/.gradle
+/.idea
+/.mcreator
+/bin
+/build
+/logs
+/run
+/.gradle/
