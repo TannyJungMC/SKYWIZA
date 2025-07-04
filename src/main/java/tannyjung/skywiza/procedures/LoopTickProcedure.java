@@ -5,14 +5,8 @@ import tannyjung.skywiza.SkywizaMod;
 
 import net.minecraftforge.server.ServerLifecycleHooks;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 public class LoopTickProcedure {
@@ -47,9 +41,6 @@ public class LoopTickProcedure {
 				if (!("").equals("NPC")) {
 					NpcLoopSecondProcedure.execute(world, x, y, z, entity);
 				}
-				if (!("").equals("Spawner")) {
-					SpawnerLoopSecondProcedure.execute(world, x, y, z);
-				}
 			}
 			if (SkywizaModVariables.MapVariables.get(world).loop_minute < 60) {
 				SkywizaModVariables.MapVariables.get(world).loop_minute = SkywizaModVariables.MapVariables.get(world).loop_minute + 1;
@@ -67,20 +58,6 @@ public class LoopTickProcedure {
 		if (true) {
 			if (!("").equals("NPC")) {
 				NpcLoopTickProcedure.execute(world, x, y, z);
-			}
-		}
-		if (true) {
-			if (!("").equals("WorldGen")) {
-				if (true) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("execute at @p as @e[name=SKYWIZA-world_gen,tag=!SKYWIZA-world_gen_set,limit=1,sort=nearest] at @s " + "if loaded ~16 ~ ~16 if loaded ~16 ~ ~-16 if loaded ~-16 ~ ~16 if loaded ~-16 ~ ~-16"
-										+ " run SKYWIZA dev world_gen loop_tick"));
-				} else {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute at @p as @e[name=SKYWIZA-world_gen,tag=!SKYWIZA-world_gen_set,limit=1,sort=nearest] at @s run SKYWIZA dev world_gen loop_tick");
-				}
 			}
 		}
 	}

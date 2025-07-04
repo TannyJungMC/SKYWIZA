@@ -1,8 +1,8 @@
 package tannyjung.skywiza_handcode.config;
 
-import tannyjung.skywiza.SkywizaMod;
+import tannyjung.core.MiscUtils;
 import tannyjung.skywiza_handcode.Handcode;
-import tannyjung.skywiza_handcode.misc.FileManager;
+import tannyjung.core.FileManager;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,17 +37,17 @@ public class ConfigPlacement {
 
                     Files.copy(source, copy, StandardCopyOption.REPLACE_EXISTING);
 
-                } catch (Exception e) {
+                } catch (Exception exception) {
 
-                    SkywizaMod.LOGGER.error(e.getMessage());
+                    MiscUtils.exception(exception);
 
                 }
 
             });
 
-        } catch (Exception e) {
+        } catch (Exception exception) {
 
-            SkywizaMod.LOGGER.error(e.getMessage());
+            MiscUtils.exception(exception);
 
         }
 
@@ -107,9 +107,9 @@ public class ConfigPlacement {
 
                         });
 
-                    } catch (Exception e) {
+                    } catch (Exception exception) {
 
-                        SkywizaMod.LOGGER.error(e.getMessage());
+                        MiscUtils.exception(exception);
 
                     }
 
@@ -188,7 +188,7 @@ public class ConfigPlacement {
 
                         }
 
-                    } buffered_reader.close(); } catch (Exception e) { SkywizaMod.LOGGER.error(e.getMessage()); }
+                    } buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
 
                 }
 
@@ -298,7 +298,7 @@ public class ConfigPlacement {
 
                                                         }
 
-                                                    } buffered_reader2.close(); } catch (Exception e) { SkywizaMod.LOGGER.error(e.getMessage()); }
+                                                    } buffered_reader2.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
 
                                                 }
 
@@ -314,7 +314,7 @@ public class ConfigPlacement {
 
                             }
 
-                        } buffered_reader.close(); } catch (Exception e) { SkywizaMod.LOGGER.error(e.getMessage()); }
+                        } buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
 
                     }
 
@@ -338,9 +338,9 @@ public class ConfigPlacement {
 
                 Files.delete(file.toPath());
 
-            } catch (Exception e) {
+            } catch (Exception exception) {
 
-                SkywizaMod.LOGGER.error(e.getMessage());
+                MiscUtils.exception(exception);
 
             }
 

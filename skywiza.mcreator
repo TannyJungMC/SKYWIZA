@@ -73,24 +73,7 @@
         "files": [
           "src/main/java/tannyjung/skywiza/procedures/SpawnerRemoverPlaceProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Spawner/Remover"
     },
@@ -1814,37 +1797,6 @@
       "path": "~/Village System"
     },
     {
-      "name": "SpawnerLoopSecond",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawner_loop_second",
-      "metadata": {
-        "files": [
-          "src/main/java/tannyjung/skywiza/procedures/SpawnerLoopSecondProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Spawner"
-    },
-    {
       "name": "SpawnerRemover",
       "type": "block",
       "compiles": true,
@@ -1852,12 +1804,12 @@
       "registry_name": "spawner_remover",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/block/SpawnerRemoverBlock.java",
-          "src/main/resources/data/skywiza/loot_tables/blocks/spawner_remover.json",
-          "src/main/java/tannyjung/skywiza/block/entity/SpawnerRemoverBlockEntity.java",
           "src/main/resources/assets/skywiza/blockstates/spawner_remover.json",
-          "src/main/resources/assets/skywiza/models/block/spawner_remover.json",
-          "src/main/resources/assets/skywiza/models/item/spawner_remover.json"
+          "src/main/java/tannyjung/skywiza/block/SpawnerRemoverBlock.java",
+          "src/main/java/tannyjung/skywiza/block/entity/SpawnerRemoverBlockEntity.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/spawner_remover.json",
+          "src/main/resources/assets/skywiza/models/item/spawner_remover.json",
+          "src/main/resources/assets/skywiza/models/block/spawner_remover.json"
         ]
       },
       "path": "~/Spawner/Remover"
@@ -2225,8 +2177,8 @@
       "registry_name": "path_manager",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/PathManagerItem.java",
-          "src/main/resources/assets/skywiza/models/item/path_manager.json"
+          "src/main/resources/assets/skywiza/models/item/path_manager.json",
+          "src/main/java/tannyjung/skywiza/item/PathManagerItem.java"
         ]
       },
       "path": "~/.Testing/Structure and World Gen/Path Generator"
@@ -2671,41 +2623,6 @@
       "path": "~/. MCreator Link"
     },
     {
-      "name": "COMMANDSpawnerLoopSecond",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_spawner_loop_second",
-      "metadata": {
-        "files": [
-          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerLoopSecondProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Spawner"
-    },
-    {
       "name": "COMMANDSpawnerLoopSecondMob",
       "type": "procedure",
       "compiles": true,
@@ -2898,6 +2815,41 @@
         "dependencies": []
       },
       "path": "~/. Other/Overlay"
+    },
+    {
+      "name": "COMMANDSpawnerLoopSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_spawner_loop_second",
+      "metadata": {
+        "files": [
+          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerLoopSecondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
     }
   ],
   "variable_elements": [

@@ -1,4 +1,4 @@
-package tannyjung.misc;
+package tannyjung.core;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.CommandSource;
@@ -25,10 +25,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.scores.Objective;
 import net.minecraftforge.server.ServerLifecycleHooks;
+
+import java.util.Comparator;
+import java.util.List;
 
 public class GameUtils {
 
@@ -104,6 +108,13 @@ public class GameUtils {
 		public static String getCurrentDimensionID (ServerLevel world) {
 
 			return world.dimension().location().toString();
+
+		}
+
+		public static List<Entity> getEntitiesAt (LevelAccessor level, int posX, int posY, int posZ) {
+
+			Vec3 center = new Vec3((posX + 0.5), (posY + 0.5), (posZ + 0.5));
+			return level.getEntitiesOfClass(Entity.class, new AABB(center, center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(center))).toList();
 
 		}
 
@@ -347,6 +358,14 @@ public class GameUtils {
 			}
 
 			return return_text;
+
+		}
+
+		public static String textFromItemText (String text) {
+
+			String id = text.substring(0, text.indexOf("{"));
+			String convert = text.substring(text.indexOf("ForgeData"), text.length() - 1);
+			return id + "{" + convert;
 
 		}
 

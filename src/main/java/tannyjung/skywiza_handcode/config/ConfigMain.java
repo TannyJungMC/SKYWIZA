@@ -1,10 +1,10 @@
 package tannyjung.skywiza_handcode.config;
 
 import net.minecraft.world.level.LevelAccessor;
-import tannyjung.skywiza.SkywizaMod;
+import tannyjung.core.MiscUtils;
 import tannyjung.skywiza_handcode.Handcode;
-import tannyjung.skywiza_handcode.misc.FileManager;
-import tannyjung.skywiza_handcode.misc.Misc;
+import tannyjung.core.FileManager;
+import tannyjung.core.GameUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -56,7 +56,7 @@ public class ConfigMain {
 
 	public static void apply (LevelAccessor level) {
 
-		Misc.sendChatMessage(level, "@a", "gray", "THT : Applied The Config");
+		GameUtils.misc.sendChatMessage(level, "@a", "gray", "THT : Applied The Config");
 
 		auto_check_update = Get.logic("auto_check_update");
 		auto_update = Get.logic("auto_update");
@@ -157,7 +157,7 @@ public class ConfigMain {
 
 						}
 
-					} buffered_reader.close(); } catch (Exception e) { SkywizaMod.LOGGER.error(e.getMessage()); }
+					} buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
 
 				}
 

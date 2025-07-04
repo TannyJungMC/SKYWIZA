@@ -60,7 +60,7 @@ public class SpawnerRemoverBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		SpawnerRemoverPlaceProcedure.execute(world, x, y, z);
+		SpawnerRemoverPlaceProcedure.execute();
 		world.scheduleTick(pos, this, 20);
 	}
 

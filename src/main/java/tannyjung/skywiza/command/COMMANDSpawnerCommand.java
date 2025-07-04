@@ -16,7 +16,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
-import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 @Mod.EventBusSubscriber
@@ -51,7 +50,7 @@ public class COMMANDSpawnerCommand {
 
 			COMMANDSpawnerLoopSecondProcedure.execute(world, x, y, z, entity);
 			return 0;
-		})).then(Commands.literal("mob_loop_second").then(Commands.argument("entities", EntityArgument.entities()).executes(arguments -> {
+		})).then(Commands.literal("loop_second_mob").executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -65,6 +64,6 @@ public class COMMANDSpawnerCommand {
 
 			COMMANDSpawnerLoopSecondMobProcedure.execute(arguments, entity);
 			return 0;
-		}))))));
+		})))));
 	}
 }

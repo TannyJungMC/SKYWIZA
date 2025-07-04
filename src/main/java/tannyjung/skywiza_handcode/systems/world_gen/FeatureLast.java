@@ -1,12 +1,12 @@
-package tannyjung.skywiza_handcode.world_gen.spawner;
+package tannyjung.skywiza_handcode.systems.world_gen;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 
-public class FeatureSpawner extends Feature <NoneFeatureConfiguration> {
+public class FeatureLast extends Feature <NoneFeatureConfiguration> {
 
-    public FeatureSpawner() {
+    public FeatureLast() {
 
         super(NoneFeatureConfiguration.CODEC);
 
@@ -15,8 +15,7 @@ public class FeatureSpawner extends Feature <NoneFeatureConfiguration> {
     @Override
     public boolean place (FeaturePlaceContext <NoneFeatureConfiguration> context) {
 
-        Spawner.start(context);
-
+        WorldGenSpawner.start(context);
         return true;
 
     }

@@ -1,4 +1,4 @@
-package tannyjung.misc;
+package tannyjung.core;
 
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.biome.Biome;
@@ -15,13 +15,14 @@ public class MiscUtils {
 
 	public static void exception (Exception exception) {
 
-		Logger LOGGER = LogManager.getLogger("TannyJung's Mods");
-		LOGGER.error("--------------------------------------------------");
-		StackTraceElement[] list = exception.getStackTrace();
+		StackTraceElement main_data = exception.getStackTrace()[0];
+		Logger logger = LogManager.getLogger("TannyJung");
+		logger.error("--------------------------------------------------");
+		logger.error("Error at {} -> {} -> {}", main_data.getClassName(), main_data.getMethodName(), main_data.getLineNumber());
 
-		for (StackTraceElement get : list) {
+		for (StackTraceElement get : exception.getStackTrace()) {
 
-			LOGGER.error(get);
+			logger.error(get);
 
 		}
 
@@ -205,6 +206,58 @@ public class MiscUtils {
 		}
 
 		return return_logic;
+
+	}
+
+	public static int[] textPosConverter (String pos, int rotation, boolean mirrored) {
+
+		int[] return_number = new int[3];
+
+		{
+
+			String[] get = pos.split("/");
+			int posX = Integer.parseInt(get[0]);
+			int posY = Integer.parseInt(get[1]);
+			int posZ = Integer.parseInt(get[2]);
+
+			// Rotation & Mirrored
+			{
+
+				if (mirrored == true) {
+
+					posX = posX * (-1);
+
+				}
+
+				if (rotation == 2) {
+
+					int posX_save = posX;
+					posX = posZ;
+					posZ = posX_save * (-1);
+
+				} else if (rotation == 3) {
+
+					posX = posX * (-1);
+					posZ = posZ * (-1);
+
+				} else if (rotation == 4) {
+
+					int posX_save = posX;
+					int posZ_save = posZ;
+					posX = posZ_save * (-1);
+					posZ = posX_save;
+
+				}
+
+			}
+
+			return_number[0] = posX;
+			return_number[1] = posY;
+			return_number[2] = posZ;
+
+		}
+
+		return return_number;
 
 	}
 
