@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.block;
 
 import tannyjung.skywiza.procedures.SpawnerPlaceProcedure;
@@ -30,7 +29,7 @@ import java.util.List;
 
 public class SpawnerBlock extends Block implements EntityBlock {
 	public SpawnerBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(-1, 3600000).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1, 3600000).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

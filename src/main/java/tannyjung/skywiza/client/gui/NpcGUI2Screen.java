@@ -1,7 +1,7 @@
 package tannyjung.skywiza.client.gui;
 
 import tannyjung.skywiza.world.inventory.NpcGUI2Menu;
-import tannyjung.skywiza.init.SkywizaModScreens.WidgetScreen;
+import tannyjung.skywiza.init.SkywizaModScreens;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -11,16 +11,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class NpcGUI2Screen extends AbstractContainerScreen<NpcGUI2Menu> implements WidgetScreen {
-	private final static HashMap<String, Object> guistate = NpcGUI2Menu.guistate;
+public class NpcGUI2Screen extends AbstractContainerScreen<NpcGUI2Menu> implements SkywizaModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
+	private boolean menuStateUpdateActive = false;
 
 	public NpcGUI2Screen(NpcGUI2Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -33,7 +30,13 @@ public class NpcGUI2Screen extends AbstractContainerScreen<NpcGUI2Menu> implemen
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("skywiza:textures/screens/npc_gui_2.png");
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
+	private static final ResourceLocation texture = ResourceLocation.parse("skywiza:textures/screens/npc_gui_2.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -43,16 +46,12 @@ public class NpcGUI2Screen extends AbstractContainerScreen<NpcGUI2Menu> implemen
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

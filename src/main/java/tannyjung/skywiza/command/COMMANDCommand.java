@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.command;
 
 import tannyjung.skywiza.procedures.WorldGenLoopTickCommandProcedure;
@@ -291,4 +290,5 @@ public class COMMANDCommand {
 					return 0;
 				})));
 	}
+
 }

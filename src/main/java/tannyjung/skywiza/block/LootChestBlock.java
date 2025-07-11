@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.block;
 
 import tannyjung.skywiza.procedures.LootChestPlaceProcedure;
@@ -30,7 +29,7 @@ import java.util.List;
 
 public class LootChestBlock extends Block implements EntityBlock {
 	public LootChestBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

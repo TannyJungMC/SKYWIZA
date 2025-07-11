@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.client.renderer;
 
 import tannyjung.skywiza.procedures.NpcSkinSteveProcedure;
@@ -25,7 +24,7 @@ public class NpcRenderer extends HumanoidMobRenderer<NpcEntity, HumanoidModel<Np
 		super(context, new HumanoidModel<NpcEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 		this.addLayer(new RenderLayer<NpcEntity, HumanoidModel<NpcEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("skywiza:textures/entities/skin_steve.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("skywiza:textures/entities/skin_steve.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, NpcEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
@@ -40,7 +39,7 @@ public class NpcRenderer extends HumanoidMobRenderer<NpcEntity, HumanoidModel<Np
 			}
 		});
 		this.addLayer(new RenderLayer<NpcEntity, HumanoidModel<NpcEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("skywiza:textures/entities/skin_alex.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("skywiza:textures/entities/skin_alex.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, NpcEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
@@ -58,6 +57,6 @@ public class NpcRenderer extends HumanoidMobRenderer<NpcEntity, HumanoidModel<Np
 
 	@Override
 	public ResourceLocation getTextureLocation(NpcEntity entity) {
-		return new ResourceLocation("skywiza:textures/entities/skin_steve.png");
+		return ResourceLocation.parse("skywiza:textures/entities/skin_steve.png");
 	}
 }

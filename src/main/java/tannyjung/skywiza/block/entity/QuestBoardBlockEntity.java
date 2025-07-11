@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.block.entity;
 
 import tannyjung.skywiza.init.SkywizaModBlockEntities;

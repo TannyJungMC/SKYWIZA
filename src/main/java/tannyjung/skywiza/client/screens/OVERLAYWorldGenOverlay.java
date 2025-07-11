@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.client.screens;
 
 import tannyjung.skywiza.procedures.OVERLAYWorldGenStepProcedure;

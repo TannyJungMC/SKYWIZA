@@ -282,7 +282,7 @@ public class SkywizaModVariables {
 		@SubscribeEvent
 		public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
 			if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
-				event.addCapability(new ResourceLocation("skywiza", "player_variables"), new PlayerVariablesProvider());
+				event.addCapability(ResourceLocation.fromNamespaceAndPath("skywiza", "player_variables"), new PlayerVariablesProvider());
 		}
 
 		private final PlayerVariables playerVariables = new PlayerVariables();

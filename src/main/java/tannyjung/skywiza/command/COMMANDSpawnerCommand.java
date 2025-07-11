@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.command;
 
 import tannyjung.skywiza.procedures.COMMANDSpawnerRespawnProcedure;
@@ -66,4 +65,5 @@ public class COMMANDSpawnerCommand {
 			return 0;
 		})))));
 	}
+
 }

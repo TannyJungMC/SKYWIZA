@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.item;
 
 import net.minecraft.world.item.Rarity;

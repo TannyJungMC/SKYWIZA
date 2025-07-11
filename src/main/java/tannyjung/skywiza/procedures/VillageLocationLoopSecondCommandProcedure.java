@@ -23,7 +23,7 @@ public class VillageLocationLoopSecondCommandProcedure {
 		if (entity == null)
 			return;
 		Entity center = null;
-		if (!(world.getBlockState(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()))).is(BlockTags.create(new ResourceLocation("skywiza:passable_blocks")))) {
+		if (!(world.getBlockState(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()))).is(BlockTags.create(ResourceLocation.parse("skywiza:passable_blocks")))) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {

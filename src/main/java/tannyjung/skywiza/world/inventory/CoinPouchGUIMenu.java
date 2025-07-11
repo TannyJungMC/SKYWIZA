@@ -1,10 +1,10 @@
-
 package tannyjung.skywiza.world.inventory;
 
 import tannyjung.skywiza.init.SkywizaModMenus;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
@@ -24,9 +24,17 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
-public class CoinPouchGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
+public class CoinPouchGUIMenu extends AbstractContainerMenu implements SkywizaModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 10)
+				return null;
+			return super.put(key, value);
+		}
+	};
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
@@ -79,30 +87,48 @@ public class CoinPouchGUIMenu extends AbstractContainerMenu implements Supplier<
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, -80, -39) {
 			private final int slot = 0;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, -62, -39) {
 			private final int slot = 1;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, -44, -39) {
 			private final int slot = 2;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, -26, -39) {
 			private final int slot = 3;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, -8, -39) {
 			private final int slot = 4;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 10, -39) {
 			private final int slot = 5;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 28, -39) {
 			private final int slot = 6;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 46, -39) {
 			private final int slot = 7;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 64, -39) {
 			private final int slot = 8;
+			private int x = CoinPouchGUIMenu.this.x;
+			private int y = CoinPouchGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -238,17 +264,27 @@ public class CoinPouchGUIMenu extends AbstractContainerMenu implements Supplier<
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
-					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
+					playerIn.drop(internal.getStackInSlot(j), false);
+					if (internal instanceof IItemHandlerModifiable ihm)
+						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
-					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
+					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
+					if (internal instanceof IItemHandlerModifiable ihm)
+						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
 		}
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
 	}
 }

@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.block;
 
 import tannyjung.skywiza.procedures.SpawnerRemoverPlaceProcedure;
@@ -27,7 +26,7 @@ import java.util.List;
 
 public class SpawnerRemoverBlock extends Block implements EntityBlock {
 	public SpawnerRemoverBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(-1, 3600000).noCollission());
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(-1, 3600000).noCollission().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

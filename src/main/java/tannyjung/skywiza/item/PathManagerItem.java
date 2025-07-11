@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.item;
 
 import tannyjung.skywiza.procedures.PathManagerClickProcedure;

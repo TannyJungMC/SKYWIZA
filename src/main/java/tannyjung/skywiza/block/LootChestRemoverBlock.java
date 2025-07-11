@@ -1,4 +1,3 @@
-
 package tannyjung.skywiza.block;
 
 import tannyjung.skywiza.procedures.LootChestRemoverPlaceProcedure;
@@ -24,7 +23,7 @@ import java.util.List;
 
 public class LootChestRemoverBlock extends Block {
 	public LootChestRemoverBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

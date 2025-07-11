@@ -43,8 +43,8 @@
       "registry_name": "golden_coin",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/GoldenCoinItem.java",
-          "src/main/resources/assets/skywiza/models/item/golden_coin.json"
+          "src/main/resources/assets/skywiza/models/item/golden_coin.json",
+          "src/main/java/tannyjung/skywiza/item/GoldenCoinItem.java"
         ]
       },
       "path": "~/. Other/Items"
@@ -57,8 +57,8 @@
       "registry_name": "silver_coin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/silver_coin.json",
-          "src/main/java/tannyjung/skywiza/item/SilverCoinItem.java"
+          "src/main/java/tannyjung/skywiza/item/SilverCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/silver_coin.json"
         ]
       },
       "path": "~/. Other/Items"
@@ -99,8 +99,8 @@
       "registry_name": "diamond_coin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/diamond_coin.json",
-          "src/main/java/tannyjung/skywiza/item/DiamondCoinItem.java"
+          "src/main/java/tannyjung/skywiza/item/DiamondCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/diamond_coin.json"
         ]
       },
       "path": "~/. Other/Items"
@@ -113,8 +113,8 @@
       "registry_name": "stone_coin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/stone_coin.json",
-          "src/main/java/tannyjung/skywiza/item/StoneCoinItem.java"
+          "src/main/java/tannyjung/skywiza/item/StoneCoinItem.java",
+          "src/main/resources/assets/skywiza/models/item/stone_coin.json"
         ]
       },
       "path": "~/. Other/Items"
@@ -127,8 +127,8 @@
       "registry_name": "quest_paper_11",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_11.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper11Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper11Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_11.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -141,8 +141,8 @@
       "registry_name": "quest_paper_12",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/QuestPaper12Item.java",
-          "src/main/resources/assets/skywiza/models/item/quest_paper_12.json"
+          "src/main/resources/assets/skywiza/models/item/quest_paper_12.json",
+          "src/main/java/tannyjung/skywiza/item/QuestPaper12Item.java"
         ]
       },
       "path": "~/Quest/Item"
@@ -197,8 +197,8 @@
       "registry_name": "quest_paper_16",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/QuestPaper16Item.java",
-          "src/main/resources/assets/skywiza/models/item/quest_paper_16.json"
+          "src/main/resources/assets/skywiza/models/item/quest_paper_16.json",
+          "src/main/java/tannyjung/skywiza/item/QuestPaper16Item.java"
         ]
       },
       "path": "~/Quest/Item"
@@ -211,8 +211,8 @@
       "registry_name": "quest_paper_21",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/QuestPaper21Item.java",
-          "src/main/resources/assets/skywiza/models/item/quest_paper_21.json"
+          "src/main/resources/assets/skywiza/models/item/quest_paper_21.json",
+          "src/main/java/tannyjung/skywiza/item/QuestPaper21Item.java"
         ]
       },
       "path": "~/Quest/Item"
@@ -225,8 +225,8 @@
       "registry_name": "quest_paper_22",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_22.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper22Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper22Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_22.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -267,8 +267,8 @@
       "registry_name": "quest_paper_51",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_51.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper51Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper51Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_51.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -295,8 +295,8 @@
       "registry_name": "quest_paper_61",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_61.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper61Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper61Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_61.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -400,11 +400,11 @@
       "registry_name": "loot_chest_remover",
       "metadata": {
         "files": [
+          "src/main/resources/assets/skywiza/models/item/loot_chest_remover.json",
           "src/main/resources/assets/skywiza/models/block/loot_chest_remover.json",
           "src/main/resources/data/skywiza/loot_tables/blocks/loot_chest_remover.json",
-          "src/main/resources/assets/skywiza/models/item/loot_chest_remover.json",
-          "src/main/resources/assets/skywiza/blockstates/loot_chest_remover.json",
-          "src/main/java/tannyjung/skywiza/block/LootChestRemoverBlock.java"
+          "src/main/java/tannyjung/skywiza/block/LootChestRemoverBlock.java",
+          "src/main/resources/assets/skywiza/blockstates/loot_chest_remover.json"
         ]
       },
       "path": "~/Loot Chest/Remover"
@@ -449,11 +449,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/skywiza/models/block/loot_chest.json",
-          "src/main/java/tannyjung/skywiza/block/entity/LootChestBlockEntity.java",
+          "src/main/resources/assets/skywiza/blockstates/loot_chest.json",
           "src/main/resources/data/skywiza/loot_tables/blocks/loot_chest.json",
-          "src/main/java/tannyjung/skywiza/block/LootChestBlock.java",
           "src/main/resources/assets/skywiza/models/item/loot_chest.json",
-          "src/main/resources/assets/skywiza/blockstates/loot_chest.json"
+          "src/main/java/tannyjung/skywiza/block/LootChestBlock.java",
+          "src/main/java/tannyjung/skywiza/block/entity/LootChestBlockEntity.java"
         ]
       },
       "path": "~/Loot Chest"
@@ -590,10 +590,10 @@
       "registry_name": "quest_board_remover",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/block/QuestBoardRemoverBlock.java",
-          "src/main/resources/assets/skywiza/models/block/quest_board_remover.json",
-          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board_remover.json",
           "src/main/resources/assets/skywiza/models/item/quest_board_remover.json",
+          "src/main/java/tannyjung/skywiza/block/QuestBoardRemoverBlock.java",
+          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board_remover.json",
+          "src/main/resources/assets/skywiza/models/block/quest_board_remover.json",
           "src/main/resources/assets/skywiza/blockstates/quest_board_remover.json"
         ]
       },
@@ -639,10 +639,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/skywiza/blockstates/spawner.json",
-          "src/main/java/tannyjung/skywiza/block/SpawnerBlock.java",
-          "src/main/java/tannyjung/skywiza/block/entity/SpawnerBlockEntity.java",
           "src/main/resources/data/skywiza/loot_tables/blocks/spawner.json",
+          "src/main/java/tannyjung/skywiza/block/entity/SpawnerBlockEntity.java",
           "src/main/resources/assets/skywiza/models/item/spawner.json",
+          "src/main/java/tannyjung/skywiza/block/SpawnerBlock.java",
           "src/main/resources/assets/skywiza/models/block/spawner.json"
         ]
       },
@@ -656,12 +656,12 @@
       "registry_name": "quest_board",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/block/QuestBoardBlock.java",
           "src/main/java/tannyjung/skywiza/block/entity/QuestBoardBlockEntity.java",
-          "src/main/resources/assets/skywiza/blockstates/quest_board.json",
           "src/main/resources/assets/skywiza/models/block/quest_board.json",
+          "src/main/resources/assets/skywiza/blockstates/quest_board.json",
+          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board.json",
           "src/main/resources/assets/skywiza/models/item/quest_board.json",
-          "src/main/resources/data/skywiza/loot_tables/blocks/quest_board.json"
+          "src/main/java/tannyjung/skywiza/block/QuestBoardBlock.java"
         ]
       },
       "path": "~/Quest/Quest Board"
@@ -782,8 +782,8 @@
       "registry_name": "quest_paper_18",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_18.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper18Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper18Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_18.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -810,8 +810,8 @@
       "registry_name": "quest_paper_52",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skywiza/models/item/quest_paper_52.json",
-          "src/main/java/tannyjung/skywiza/item/QuestPaper52Item.java"
+          "src/main/java/tannyjung/skywiza/item/QuestPaper52Item.java",
+          "src/main/resources/assets/skywiza/models/item/quest_paper_52.json"
         ]
       },
       "path": "~/Quest/Item"
@@ -1308,8 +1308,8 @@
       "registry_name": "npc",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/client/renderer/NpcRenderer.java",
           "src/main/resources/assets/skywiza/models/item/npc_spawn_egg.json",
+          "src/main/java/tannyjung/skywiza/client/renderer/NpcRenderer.java",
           "src/main/java/tannyjung/skywiza/entity/NpcEntity.java"
         ]
       },
@@ -1356,10 +1356,10 @@
       "registry_name": "npc_block",
       "metadata": {
         "files": [
+          "src/main/java/tannyjung/skywiza/block/NpcBlockBlock.java",
           "src/main/resources/assets/skywiza/blockstates/npc_block.json",
           "src/main/java/tannyjung/skywiza/block/entity/NpcBlockBlockEntity.java",
           "src/main/resources/assets/skywiza/models/block/npc_block.json",
-          "src/main/java/tannyjung/skywiza/block/NpcBlockBlock.java",
           "src/main/resources/data/skywiza/loot_tables/blocks/npc_block.json",
           "src/main/resources/assets/skywiza/models/item/npc_block.json"
         ]
@@ -1405,8 +1405,8 @@
       "registry_name": "village_manager",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/VillageManagerItem.java",
-          "src/main/resources/assets/skywiza/models/item/village_manager.json"
+          "src/main/resources/assets/skywiza/models/item/village_manager.json",
+          "src/main/java/tannyjung/skywiza/item/VillageManagerItem.java"
         ]
       },
       "path": "~/Village System"
@@ -1490,8 +1490,8 @@
       "registry_name": "npc_gui_2",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/client/gui/NpcGUI2Screen.java",
-          "src/main/java/tannyjung/skywiza/world/inventory/NpcGUI2Menu.java"
+          "src/main/java/tannyjung/skywiza/world/inventory/NpcGUI2Menu.java",
+          "src/main/java/tannyjung/skywiza/client/gui/NpcGUI2Screen.java"
         ]
       },
       "path": "~/NPC"
@@ -1505,8 +1505,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/skywiza/models/item/coin_pouch.json",
-          "src/main/java/tannyjung/skywiza/item/CoinPouchItem.java",
-          "src/main/java/tannyjung/skywiza/item/inventory/CoinPouchInventoryCapability.java"
+          "src/main/java/tannyjung/skywiza/item/inventory/CoinPouchInventoryCapability.java",
+          "src/main/java/tannyjung/skywiza/item/CoinPouchItem.java"
         ]
       },
       "path": "~/. Other/Items"
@@ -1519,8 +1519,8 @@
       "registry_name": "coin_pouch_gui",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/world/inventory/CoinPouchGUIMenu.java",
-          "src/main/java/tannyjung/skywiza/client/gui/CoinPouchGUIScreen.java"
+          "src/main/java/tannyjung/skywiza/client/gui/CoinPouchGUIScreen.java",
+          "src/main/java/tannyjung/skywiza/world/inventory/CoinPouchGUIMenu.java"
         ]
       },
       "path": "~/. Other/Items"
@@ -1941,12 +1941,12 @@
       "registry_name": "village_info",
       "metadata": {
         "files": [
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_info.json",
           "src/main/resources/assets/skywiza/models/item/village_info.json",
+          "src/main/java/tannyjung/skywiza/block/VillageInfoBlock.java",
           "src/main/java/tannyjung/skywiza/block/entity/VillageInfoBlockEntity.java",
           "src/main/resources/assets/skywiza/blockstates/village_info.json",
-          "src/main/resources/assets/skywiza/models/block/village_info.json",
-          "src/main/java/tannyjung/skywiza/block/VillageInfoBlock.java",
-          "src/main/resources/data/skywiza/loot_tables/blocks/village_info.json"
+          "src/main/resources/assets/skywiza/models/block/village_info.json"
         ]
       },
       "path": "~/Village System"
@@ -1960,11 +1960,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/skywiza/blockstates/village_center.json",
+          "src/main/resources/assets/skywiza/models/item/village_center.json",
           "src/main/resources/assets/skywiza/models/block/village_center.json",
-          "src/main/resources/data/skywiza/loot_tables/blocks/village_center.json",
           "src/main/java/tannyjung/skywiza/block/VillageCenterBlock.java",
           "src/main/java/tannyjung/skywiza/block/entity/VillageCenterBlockEntity.java",
-          "src/main/resources/assets/skywiza/models/item/village_center.json"
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_center.json"
         ]
       },
       "path": "~/Village System"
@@ -2039,12 +2039,12 @@
       "registry_name": "village_location",
       "metadata": {
         "files": [
-          "src/main/resources/data/skywiza/loot_tables/blocks/village_location.json",
+          "src/main/resources/assets/skywiza/models/item/village_location.json",
           "src/main/resources/assets/skywiza/blockstates/village_location.json",
           "src/main/java/tannyjung/skywiza/block/entity/VillageLocationBlockEntity.java",
-          "src/main/java/tannyjung/skywiza/block/VillageLocationBlock.java",
           "src/main/resources/assets/skywiza/models/block/village_location.json",
-          "src/main/resources/assets/skywiza/models/item/village_location.json"
+          "src/main/resources/data/skywiza/loot_tables/blocks/village_location.json",
+          "src/main/java/tannyjung/skywiza/block/VillageLocationBlock.java"
         ]
       },
       "path": "~/Village System"
@@ -2314,8 +2314,8 @@
       "registry_name": "txt_structure_manager",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/TxtStructureManagerItem.java",
-          "src/main/resources/assets/skywiza/models/item/txt_structure_manager.json"
+          "src/main/resources/assets/skywiza/models/item/txt_structure_manager.json",
+          "src/main/java/tannyjung/skywiza/item/TxtStructureManagerItem.java"
         ]
       },
       "path": "~/.Testing/Structure and World Gen/TXT Structure"
@@ -2409,8 +2409,8 @@
       "registry_name": "testing_stick",
       "metadata": {
         "files": [
-          "src/main/java/tannyjung/skywiza/item/TestingStickItem.java",
-          "src/main/resources/assets/skywiza/models/item/testing_stick.json"
+          "src/main/resources/assets/skywiza/models/item/testing_stick.json",
+          "src/main/java/tannyjung/skywiza/item/TestingStickItem.java"
         ]
       },
       "path": "~/.Testing"
@@ -3167,6 +3167,23 @@
       "item.skywiza.path_manager": "Pathway Manager"
     }
   },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/tannyjung/skywiza/SkywizaMod.java",
+      "src/main/java/tannyjung/skywiza/network/SkywizaModVariables.java",
+      "src/main/java/tannyjung/skywiza/network/MenuStateUpdateMessage.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModMenus.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModScreens.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModBlocks.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModBlockEntities.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModItems.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModEntities.java",
+      "src/main/java/tannyjung/skywiza/init/SkywizaModEntityRenderers.java"
+    ]
+  },
   "foldersRoot": {
     "name": "~",
     "children": [
@@ -3281,5 +3298,5 @@
     "credits": "Created with MCreator",
     "modElementsPackage": "tannyjung.skywiza"
   },
-  "mcreatorVersion": 202500113416
+  "mcreatorVersion": 202500227613
 }

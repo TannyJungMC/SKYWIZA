@@ -1,7 +1,7 @@
 package tannyjung.skywiza.client.gui;
 
 import tannyjung.skywiza.world.inventory.NpcGUIMenu;
-import tannyjung.skywiza.init.SkywizaModScreens.WidgetScreen;
+import tannyjung.skywiza.init.SkywizaModScreens;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -11,16 +11,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import java.util.HashMap;
-
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class NpcGUIScreen extends AbstractContainerScreen<NpcGUIMenu> implements WidgetScreen {
-	private final static HashMap<String, Object> guistate = NpcGUIMenu.guistate;
+public class NpcGUIScreen extends AbstractContainerScreen<NpcGUIMenu> implements SkywizaModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
+	private boolean menuStateUpdateActive = false;
 
 	public NpcGUIScreen(NpcGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -33,7 +30,13 @@ public class NpcGUIScreen extends AbstractContainerScreen<NpcGUIMenu> implements
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("skywiza:textures/screens/npc_gui.png");
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
+	private static final ResourceLocation texture = ResourceLocation.parse("skywiza:textures/screens/npc_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -43,19 +46,13 @@ public class NpcGUIScreen extends AbstractContainerScreen<NpcGUIMenu> implements
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("skywiza:textures/screens/paper2.png"), this.leftPos + 43, this.topPos + -29, 0, 0, 320, 224, 320, 224);
-
+		guiGraphics.blit(ResourceLocation.parse("skywiza:textures/screens/paper2.png"), this.leftPos + 43, this.topPos + -29, 0, 0, 320, 224, 320, 224);
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override

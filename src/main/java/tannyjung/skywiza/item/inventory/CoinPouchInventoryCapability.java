@@ -1,8 +1,7 @@
-
 package tannyjung.skywiza.item.inventory;
 
+import tannyjung.skywiza.world.inventory.CoinPouchGUIMenu;
 import tannyjung.skywiza.init.SkywizaModItems;
-import tannyjung.skywiza.client.gui.CoinPouchGUIScreen;
 
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -12,26 +11,23 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
-import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
-@Mod.EventBusSubscriber(Dist.CLIENT)
+@Mod.EventBusSubscriber
 public class CoinPouchInventoryCapability implements ICapabilitySerializable<CompoundTag> {
 	@SubscribeEvent
-	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == SkywizaModItems.COIN_POUCH.get()) {
-			if (Minecraft.getInstance().screen instanceof CoinPouchGUIScreen) {
-				Minecraft.getInstance().player.closeContainer();
-			}
+			Player player = event.getPlayer();
+			if (player.containerMenu instanceof CoinPouchGUIMenu)
+				player.closeContainer();
 		}
 	}
 
