@@ -75,7 +75,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Spawner/Remover"
+      "path": "~/Spawner"
     },
     {
       "name": "WoodenCoin",
@@ -1812,7 +1812,7 @@
           "src/main/resources/assets/skywiza/models/block/spawner_remover.json"
         ]
       },
-      "path": "~/Spawner/Remover"
+      "path": "~/Spawner"
     },
     {
       "name": "LootChestRefillForce",
@@ -3197,12 +3197,7 @@
       },
       {
         "name": "Spawner",
-        "children": [
-          {
-            "name": "Remover",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Quest",
