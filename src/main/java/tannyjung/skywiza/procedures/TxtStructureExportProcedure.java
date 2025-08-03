@@ -223,7 +223,7 @@ public class TxtStructureExportProcedure {
 									if (true) {
 										text_detected = false;
 										try {
-											BufferedReader fileReader = new BufferedReader(new FileReader(file));
+											BufferedReader fileReader = new BufferedReader(new FileReader(file), 65536);
 											String stringiterator = "";
 											while ((stringiterator = fileReader.readLine()) != null) {
 												if (stringiterator.contains("" + exporter.getPersistentData().get("txt_structure_entity"))) {

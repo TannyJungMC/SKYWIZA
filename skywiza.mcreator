@@ -669,7 +669,7 @@
     {
       "name": "ConfigRepair",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "config_repair",
       "metadata": {
@@ -700,7 +700,7 @@
     {
       "name": "TxtFunction",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "txt_function",
       "metadata": {
@@ -1559,7 +1559,7 @@
     {
       "name": "ConfigApply",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "config_apply",
       "metadata": {
@@ -2270,7 +2270,7 @@
     {
       "name": "TxtStructureExport",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "txt_structure_export",
       "metadata": {
@@ -2381,7 +2381,7 @@
     {
       "name": "TxtStructurePlace",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "txt_structure_place",
       "metadata": {
@@ -2659,19 +2659,6 @@
       "path": "~/. Config and Command"
     },
     {
-      "name": "COMMANDSpawner",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_spawner",
-      "metadata": {
-        "files": [
-          "src/main/java/tannyjung/skywiza/command/COMMANDSpawnerCommand.java"
-        ]
-      },
-      "path": "~/Spawner"
-    },
-    {
       "name": "SpawnerRespawn",
       "type": "procedure",
       "compiles": true,
@@ -2686,37 +2673,6 @@
             "name": "entity",
             "type": "entity"
           },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Spawner"
-    },
-    {
-      "name": "COMMANDSpawnerRespawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "command_spawner_respawn",
-      "metadata": {
-        "files": [
-          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerRespawnProcedure.java"
-        ],
-        "dependencies": [
           {
             "name": "x",
             "type": "number"
@@ -2817,15 +2773,25 @@
       "path": "~/. Other/Overlay"
     },
     {
+      "name": "COMMANDSpawner",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_spawner",
+      "metadata": {
+        "files": [
+          "src/main/java/tannyjung/skywiza/command/COMMANDSpawnerCommand.java"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
       "name": "COMMANDSpawnerLoopSecond",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
       "registry_name": "command_spawner_loop_second",
       "metadata": {
-        "files": [
-          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerLoopSecondProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2847,6 +2813,44 @@
             "name": "world",
             "type": "world"
           }
+        ],
+        "files": [
+          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerLoopSecondProcedure.java"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "COMMANDSpawnerRespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_spawner_respawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/tannyjung/skywiza/procedures/COMMANDSpawnerRespawnProcedure.java"
         ]
       },
       "path": "~/Spawner"
@@ -3298,5 +3302,5 @@
     "credits": "Created with MCreator",
     "modElementsPackage": "tannyjung.skywiza"
   },
-  "mcreatorVersion": 202500227613
+  "mcreatorVersion": 202500228610
 }

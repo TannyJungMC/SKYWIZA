@@ -22,6 +22,6 @@ public class COMMANDSpawnerLoopSecondProcedure {
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "");
 			SkywizaMod.LOGGER.info(entity);
 		}
-		Spawner.CenterLoopSecond(world, entity);
+		Spawner.loopSecondCenter(world, entity);
 	}
 }

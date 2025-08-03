@@ -1,12 +1,13 @@
 package tannyjung.skywiza_handcode.systems.world_gen;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import tannyjung.core.GameUtils;
-import tannyjung.core.MiscUtils;
+import tannyjung.core.OutsideUtils;
 import tannyjung.skywiza_handcode.Handcode;
 
 import java.io.BufferedReader;
@@ -15,16 +16,15 @@ import java.io.FileReader;
 
 public class WorldGenSpawner {
 
-    public static void start (FeaturePlaceContext <NoneFeatureConfiguration> context) {
+    public static void start (LevelAccessor level_accessor, ChunkPos chunk_pos) {
 
-        File file = new File(Handcode.directory_config + "/config_placement_spawner.txt");
+        File file = new File(Handcode.directory_config + "/config_world_gen_spawner.txt");
 
         if (file.exists() == true && file.isDirectory() == false) {
 
-            LevelAccessor level = context.level();
-            int posX = context.origin().getX();
-            int posZ = context.origin().getZ();
-            int posY = level.getHeight(Heightmap.Types.MOTION_BLOCKING, posX, posZ);
+            int posX = chunk_pos.x * 16;
+            int posZ = chunk_pos.z * 16;
+            int posY = level_accessor.getHeight(Heightmap.Types.MOTION_BLOCKING, posX, posZ);
             BlockPos pos = new BlockPos(posX, posY, posZ);
 
             boolean start_test = false;
@@ -34,7 +34,7 @@ public class WorldGenSpawner {
             // Read Placement Config
             {
 
-                try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file)); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
+                try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file), 65536); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
 
                     {
 
@@ -88,7 +88,7 @@ public class WorldGenSpawner {
 
                                             {
 
-                                                if (MiscUtils.configTestBiome(level.getBiome(pos), read_all.replace("biome = ", "")) == false) {
+                                                if (GameUtils.outside.configTestBiome(level_accessor.getBiome(pos), read_all.replace("biome = ", "")) == false) {
 
                                                     skip = true;
 
@@ -100,7 +100,7 @@ public class WorldGenSpawner {
 
                                             {
 
-                                                if (MiscUtils.configTestBlock(level.getBlockState(new BlockPos(posX, posY - 1, posZ)), read_all.replace("ground_block = ", "")) == false) {
+                                                if (GameUtils.outside.configTestBlock(level_accessor.getBlockState(new BlockPos(posX, posY - 1, posZ)), read_all.replace("ground_block = ", "")) == false) {
 
                                                     skip = true;
 
@@ -120,9 +120,9 @@ public class WorldGenSpawner {
 
                                             }
 
-                                            // Break the test if passed
                                             if (skip == false) {
 
+                                                place(level_accessor, id, pos);
                                                 break;
 
                                             }
@@ -139,13 +139,7 @@ public class WorldGenSpawner {
 
                     }
 
-                } buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
-
-            }
-
-            if (skip == false) {
-
-                place(level, id, pos);
+                } buffered_reader.close(); } catch (Exception exception) { OutsideUtils.exception(new Exception(), exception); }
 
             }
 
@@ -153,7 +147,7 @@ public class WorldGenSpawner {
 
     }
 
-    private static void place (LevelAccessor level, String id, BlockPos pos) {
+    private static void place (LevelAccessor level_accessor, String id, BlockPos pos) {
 
         File file = new File(Handcode.directory_config + "/custom_packs/.organized/spawner/" + id + ".txt");
 
@@ -164,7 +158,7 @@ public class WorldGenSpawner {
             // Get Data
             {
 
-                try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file)); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
+                try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file), 65536); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
 
                     {
 
@@ -172,14 +166,14 @@ public class WorldGenSpawner {
 
                     }
 
-                } buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
+                } buffered_reader.close(); } catch (Exception exception) { OutsideUtils.exception(new Exception(), exception); }
 
             }
 
             String data = GameUtils.block.textFromItemText(get.substring("give @p ".length()));
-            level.setBlock(pos, GameUtils.block.fromText(data.toString()), 2);
-            level.getBlockEntity(pos).load(GameUtils.NBT.block.textToCompoundTag(data.toString()));
-            level.scheduleTick(pos, level.getBlockState(pos).getBlock(), 20);
+            level_accessor.setBlock(pos, GameUtils.block.fromText(data), 2);
+            level_accessor.getBlockEntity(pos).load(GameUtils.nbt.textToCompoundTag(data));
+            level_accessor.scheduleTick(pos, level_accessor.getBlockState(pos).getBlock(), 20);
 
         }
 

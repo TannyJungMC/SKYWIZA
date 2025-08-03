@@ -7,9 +7,9 @@ import tannyjung.core.FileManager;
 
 public class ConfigRepairAll {
 
-	public static void start (LevelAccessor level) {
+	public static void start () {
 
-		GameUtils.misc.sendChatMessage(level, "@a", "gray", "THT : Repaired The Config");
+		// GameUtils.misc.sendChatMessage(level, "@a", "gray", "THT : Repaired The Config");
 
 		FileManager.createFolder(Handcode.directory_world_data + "/regions");
 		FileManager.createFolder(Handcode.directory_world_data + "/surface_test");

@@ -38,7 +38,7 @@ public class TxtFunctionProcedure {
 		}).getMessage()), File.separator + (StringArgumentType.getString(arguments, "file") + ".txt"));
 		if (file.exists()) {
 			try {
-				BufferedReader fileReader = new BufferedReader(new FileReader(file));
+				BufferedReader fileReader = new BufferedReader(new FileReader(file), 65536);
 				String stringiterator = "";
 				while ((stringiterator = fileReader.readLine()) != null) {
 					if (start == false) {

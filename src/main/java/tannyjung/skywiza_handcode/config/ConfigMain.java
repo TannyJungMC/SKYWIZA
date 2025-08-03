@@ -1,10 +1,8 @@
 package tannyjung.skywiza_handcode.config;
 
-import net.minecraft.world.level.LevelAccessor;
-import tannyjung.core.MiscUtils;
+import tannyjung.core.OutsideUtils;
 import tannyjung.skywiza_handcode.Handcode;
 import tannyjung.core.FileManager;
-import tannyjung.core.GameUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -54,9 +52,7 @@ public class ConfigMain {
 
 	}
 
-	public static void apply (LevelAccessor level) {
-
-		GameUtils.misc.sendChatMessage(level, "@a", "gray", "THT : Applied The Config");
+	public static void apply () {
 
 		auto_check_update = Get.logic("auto_check_update");
 		auto_update = Get.logic("auto_update");
@@ -140,7 +136,7 @@ public class ConfigMain {
 
 				{
 
-					try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file)); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
+					try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file), 65536); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
 
 						{
 
@@ -157,7 +153,7 @@ public class ConfigMain {
 
 						}
 
-					} buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
+					} buffered_reader.close(); } catch (Exception exception) { OutsideUtils.exception(new Exception(), exception); }
 
 				}
 

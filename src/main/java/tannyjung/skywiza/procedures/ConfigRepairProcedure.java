@@ -50,7 +50,7 @@ public class ConfigRepairProcedure {
 							("execute if entity @e[type=player,distance=..0.01] run tellraw @a [{\"text\":\"SKYWIZA : Repaired \",\"color\":\"yellow\"},{\"text\":\"" + "config.txt" + "\",\"color\":\"white\"}]"));
 			}
 			try {
-				BufferedReader fileReader = new BufferedReader(new FileReader(file));
+				BufferedReader fileReader = new BufferedReader(new FileReader(file), 65536);
 				String stringiterator = "";
 				while ((stringiterator = fileReader.readLine()) != null) {
 					old_version = old_version + "$" + stringiterator;

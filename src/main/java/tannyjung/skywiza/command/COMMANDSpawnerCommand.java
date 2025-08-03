@@ -33,7 +33,7 @@ public class COMMANDSpawnerCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			COMMANDSpawnerRespawnProcedure.execute(world, x, y, z);
+			COMMANDSpawnerRespawnProcedure.execute(world, x, y, z, entity);
 			return 0;
 		})))).then(Commands.literal("dev").then(Commands.literal("spawner").then(Commands.literal("loop_second").executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();

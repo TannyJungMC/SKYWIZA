@@ -1,22 +1,9 @@
 package tannyjung.skywiza.command;
 
-import tannyjung.skywiza.procedures.WorldGenLoopTickCommandProcedure;
-import tannyjung.skywiza.procedures.VillageLocationLoopSecondCommandProcedure;
-import tannyjung.skywiza.procedures.VillageCenterLoopSecondCommandProcedure;
-import tannyjung.skywiza.procedures.TxtStructurePlaceProcedure;
-import tannyjung.skywiza.procedures.TxtStructureExportProcedure;
-import tannyjung.skywiza.procedures.TxtFunctionProcedure;
-import tannyjung.skywiza.procedures.TestingCommandProcedure;
-import tannyjung.skywiza.procedures.QuestBoardResetProcedure;
-import tannyjung.skywiza.procedures.NpcLoopTickCommandProcedure;
-import tannyjung.skywiza.procedures.NpcLoopSecondCommandProcedure;
-import tannyjung.skywiza.procedures.LootChestRefillForceProcedure;
-import tannyjung.skywiza.procedures.LootChestLoopSecondCommandProcedure;
 import tannyjung.skywiza.procedures.ConfigRepairProcedure;
 import tannyjung.skywiza.procedures.ConfigApplyProcedure;
 import tannyjung.skywiza.procedures.CommandTimeDetectionRealTimeProcedure;
 import tannyjung.skywiza.procedures.CommandTimeDetectionGameTimeProcedure;
-import tannyjung.skywiza.procedures.CityGeneratorLoopTickCommandProcedure;
 
 import org.checkerframework.checker.units.qual.s;
 
@@ -29,7 +16,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
-import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
 import net.minecraft.commands.arguments.MessageArgument;
 import net.minecraft.commands.Commands;
 
@@ -103,192 +89,7 @@ public class COMMANDCommand {
 
 																	CommandTimeDetectionRealTimeProcedure.execute(arguments, entity);
 																	return 0;
-																}))))))))))))))
-				.then(Commands.literal("txt_function").then(Commands.argument("file", StringArgumentType.word()).then(Commands.argument("folder", MessageArgument.message()).executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					TxtFunctionProcedure.execute(world, x, y, z, arguments);
-					return 0;
-				})))).then(Commands.literal("txt_structure").then(Commands.literal("export").then(Commands.argument("from", BlockPosArgument.blockPos()).then(Commands.argument("to", BlockPosArgument.blockPos()).executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					TxtStructureExportProcedure.execute(world, x, y, z, arguments, entity);
-					return 0;
-				})))).then(Commands.literal("place").then(Commands.argument("height", DoubleArgumentType.doubleArg()).then(Commands.argument("rotation", DoubleArgumentType.doubleArg(0, 361))
-						.then(Commands.argument("mirrored", DoubleArgumentType.doubleArg(0, 2)).then(Commands.argument("file", StringArgumentType.word()).then(Commands.argument("folder", MessageArgument.message()).executes(arguments -> {
-							Level world = arguments.getSource().getUnsidedLevel();
-							double x = arguments.getSource().getPosition().x();
-							double y = arguments.getSource().getPosition().y();
-							double z = arguments.getSource().getPosition().z();
-							Entity entity = arguments.getSource().getEntity();
-							if (entity == null && world instanceof ServerLevel _servLevel)
-								entity = FakePlayerFactory.getMinecraft(_servLevel);
-							Direction direction = Direction.DOWN;
-							if (entity != null)
-								direction = entity.getDirection();
-
-							TxtStructurePlaceProcedure.execute(arguments, entity);
-							return 0;
-						})))))))))
-				.then(Commands.literal("event").then(Commands.literal("quest_board_reset").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					QuestBoardResetProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("loot_chest").then(Commands.literal("refill").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					LootChestRefillForceProcedure.execute(world);
-					return 0;
-				})))).then(Commands.literal("dev").then(Commands.literal("loot_chest").then(Commands.literal("loop_second").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					LootChestLoopSecondCommandProcedure.execute(world, entity);
-					return 0;
-				}))).then(Commands.literal("village").then(Commands.literal("center_loop_second").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					VillageCenterLoopSecondCommandProcedure.execute(world, entity);
-					return 0;
-				})).then(Commands.literal("location_loop_second").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					VillageLocationLoopSecondCommandProcedure.execute(world, x, y, z, entity);
-					return 0;
-				}))).then(Commands.literal("npc").then(Commands.literal("loop_tick").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					NpcLoopTickCommandProcedure.execute(entity);
-					return 0;
-				})).then(Commands.literal("loop_second").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					NpcLoopSecondCommandProcedure.execute(world, x, y, z, entity);
-					return 0;
-				}))).then(Commands.literal("world_gen").then(Commands.literal("loop_tick").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					WorldGenLoopTickCommandProcedure.execute();
-					return 0;
-				}))).then(Commands.literal("city_generator").then(Commands.literal("loop_tick").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					CityGeneratorLoopTickCommandProcedure.execute(entity);
-					return 0;
-				})))).then(Commands.literal("testing").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					TestingCommandProcedure.execute(entity);
-					return 0;
-				})));
+																}))))))))))))))));
 	}
 
 }

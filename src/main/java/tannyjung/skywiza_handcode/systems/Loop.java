@@ -1,26 +1,29 @@
 package tannyjung.skywiza_handcode.systems;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.LevelAccessor;
 import tannyjung.core.GameUtils;
 import tannyjung.skywiza.SkywizaMod;
+import tannyjung.skywiza_handcode.Handcode;
 import tannyjung.skywiza_handcode.systems.spawner.Spawner;
 
 public class Loop {
 
-    private static int second = 1;
-    private static int living_tree_mechanics_tick = 0;
+    private static int second = 0;
 
-    public static void start (LevelAccessor level) {
+    public static void start (LevelAccessor level_accessor, ServerLevel level_server) {
 
-        if (GameUtils.misc.playerCount(level) > 0) {
+        if (Handcode.world_active == true) {
 
             SkywizaMod.queueServerWork(1, () -> {
 
-                start(level);
+                start(level_accessor, level_server);
 
             });
 
-            tick(level);
+            // if (PackUpdate.install_pause_systems == false) {
+
+            tick(level_accessor, level_server);
 
             // Second Loop
             {
@@ -30,7 +33,7 @@ public class Loop {
                 if (second > 20) {
 
                     second = 0;
-                    second(level);
+                    second(level_server);
 
                 }
 
@@ -40,15 +43,15 @@ public class Loop {
 
     }
 
-    private static void tick (LevelAccessor level) {
+    private static void tick (LevelAccessor level_accessor, ServerLevel level_server) {
 
 
 
     }
 
-    private static void second (LevelAccessor level) {
+    private static void second (ServerLevel level_server) {
 
-        Spawner.loopSecond(level);
+        Spawner.loopSecond(level_server);
 
     }
 

@@ -100,7 +100,7 @@ public class TxtStructurePlaceProcedure {
 					}
 				}
 				try {
-					BufferedReader fileReader = new BufferedReader(new FileReader(file));
+					BufferedReader fileReader = new BufferedReader(new FileReader(file), 65536);
 					String stringiterator = "";
 					while ((stringiterator = fileReader.readLine()) != null) {
 						text_replace = stringiterator;

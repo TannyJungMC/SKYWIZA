@@ -28,7 +28,7 @@ public class ConfigApplyProcedure {
 		file = new File((FMLPaths.GAMEDIR.get().toString() + "\\config\\SKYWIZA"), File.separator + "config.txt");
 		if (file.exists() == true) {
 			try {
-				BufferedReader fileReader = new BufferedReader(new FileReader(file));
+				BufferedReader fileReader = new BufferedReader(new FileReader(file), 65536);
 				String stringiterator = "";
 				while ((stringiterator = fileReader.readLine()) != null) {
 					if (!("").equals("Long Time")) {

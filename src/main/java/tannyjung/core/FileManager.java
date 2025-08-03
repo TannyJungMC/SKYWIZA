@@ -1,60 +1,9 @@
 package tannyjung.core;
 
 import java.io.*;
+import java.nio.file.Files;
 
 public class FileManager {
-
-	public static int[] textPosConverter (String pos, int rotation, boolean mirrored) {
-
-		int[] return_number = new int[3];
-
-		{
-
-			String[] get = pos.split("/");
-			int posX = Integer.parseInt(get[0]);
-			int posY = Integer.parseInt(get[1]);
-			int posZ = Integer.parseInt(get[2]);
-
-			// Rotation & Mirrored
-			{
-
-				if (mirrored == true) {
-
-					posX = posX * (-1);
-
-				}
-
-				if (rotation == 2) {
-
-					int posX_save = posX;
-					posX = posZ;
-					posZ = posX_save * (-1);
-
-				} else if (rotation == 3) {
-
-					posX = posX * (-1);
-					posZ = posZ * (-1);
-
-				} else if (rotation == 4) {
-
-					int posX_save = posX;
-					int posZ_save = posZ;
-					posX = posZ_save * (-1);
-					posZ = posX_save;
-
-				}
-
-			}
-
-			return_number[0] = posX;
-			return_number[1] = posY;
-			return_number[2] = posZ;
-
-		}
-
-		return return_number;
-
-	}
 
 	public static void createFolder (String path) {
 
@@ -85,7 +34,7 @@ public class FileManager {
 
 				} catch (Exception exception) {
 
-					MiscUtils.exception(exception);
+					OutsideUtils.exception(new Exception(), exception);
 
 				}
 
@@ -105,7 +54,7 @@ public class FileManager {
 
 		} catch (Exception exception) {
 
-			MiscUtils.exception(exception);
+			OutsideUtils.exception(new Exception(), exception);
 
 		}
 
@@ -114,23 +63,8 @@ public class FileManager {
 	public static void writeConfigTXT (String path, String write_get) {
 
 		File file = new File(path);
-
-		// Create a File
-		{
-
-			if (file.exists() == false) {
-
-				try {
-
-					file.createNewFile();
-
-				} catch (Exception ignored) {
-
-				}
-
-			}
-
-		}
+		createFolder(file.getParent());
+		boolean old_file_exists = file.exists() == true && file.isDirectory() == false;
 
 		// Test and Write
 		{
@@ -147,32 +81,28 @@ public class FileManager {
 						if (read_new.contains(" = ") == true) {
 
 							String test = read_new.substring(0, read_new.indexOf(" = "));
-							boolean exists = false;
 
-							// Read Old
-							{
+							if (old_file_exists) {
 
-								try { BufferedReader buffered_reader2 = new BufferedReader(new FileReader(file)); String read_old = ""; while ((read_old = buffered_reader2.readLine()) != null) {
+								// Read Old
+								{
 
-									{
+									try { BufferedReader buffered_reader2 = new BufferedReader(new FileReader(file), 65536); String read_old = ""; while ((read_old = buffered_reader2.readLine()) != null) {
 
-										if (read_old.startsWith(test + " = ") == true) {
+										{
 
-											read_new = read_old;
-											exists = true;
-											break;
+											if (read_old.startsWith(test + " = ") == true) {
+
+												read_new = read_old;
+												break;
+
+											}
 
 										}
 
-									}
+									} buffered_reader2.close(); } catch (Exception exception) { OutsideUtils.exception(new Exception(), exception); }
 
-								} buffered_reader2.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
-
-							}
-
-							if (exists == false) {
-
-								System.out.println("Repaired " + file.getName() + " > " + test);
+								}
 
 							}
 
@@ -183,7 +113,7 @@ public class FileManager {
 
 					}
 
-				} buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
+				} buffered_reader.close(); } catch (Exception exception) { OutsideUtils.exception(new Exception(), exception); }
 
 			}
 
@@ -193,69 +123,26 @@ public class FileManager {
 
 	}
 
-	public static class GetConfigValue {
+	public static String[] fileToStringArray (String path) {
 
-		public static boolean logic (String path, String name) {
+		String[] return_array = new String[0];
+		File file = new File(path);
 
-			return Boolean.parseBoolean(find(path, name));
+		{
 
-		}
+			try {
 
-		public static int numberInt (String path, String name) {
+				return_array = Files.readAllLines(file.toPath()).toArray(new String[0]);
 
-			return Integer.parseInt(find(path, name));
+			} catch (Exception exception) {
 
-		}
-
-		public static double numberDouble (String path, String name) {
-
-			return Double.parseDouble(find(path, name));
-
-		}
-
-		public static String text (String path, String name) {
-
-			return find(path, name);
-
-		}
-
-		public static String find (String path, String name) {
-
-			String return_text = "";
-			name = name + " = ";
-
-			{
-
-				File file = new File(path);
-
-				{
-
-					try { BufferedReader buffered_reader = new BufferedReader(new FileReader(file)); String read_all = ""; while ((read_all = buffered_reader.readLine()) != null) {
-
-						{
-
-							if (read_all.startsWith("|") == false) {
-
-								if (read_all.startsWith(name) == true) {
-
-									return_text = read_all.replace(name, "");
-									break;
-
-								}
-
-							}
-
-						}
-
-					} buffered_reader.close(); } catch (Exception exception) { MiscUtils.exception(exception); }
-
-				}
+				OutsideUtils.exception(new Exception(), exception);
 
 			}
 
-			return return_text;
-
 		}
+
+		return return_array;
 
 	}
 
