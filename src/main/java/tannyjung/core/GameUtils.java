@@ -656,15 +656,15 @@ public class GameUtils {
 
 			Property<?> property = block.getBlock().getStateDefinition().getProperty(name);
 
-            if (block.hasProperty(property) == true) {
+			if (block.hasProperty(property) == true) {
 
-                if (property instanceof BooleanProperty property_instance) {
+				if (property instanceof BooleanProperty property_instance) {
 
-                    block = block.setValue(property_instance, value);
+					block = block.setValue(property_instance, value);
 
-                }
+				}
 
-            }
+			}
 
 			return block;
 
@@ -674,15 +674,15 @@ public class GameUtils {
 
 			Property<?> property = block.getBlock().getStateDefinition().getProperty(name);
 
-            if (block.hasProperty(property) == true) {
+			if (block.hasProperty(property) == true) {
 
-                if (property instanceof IntegerProperty property_instance) {
+				if (property instanceof IntegerProperty property_instance) {
 
-                    block = block.setValue(property_instance, value);
+					block = block.setValue(property_instance, value);
 
-                }
+				}
 
-            }
+			}
 
 			return block;
 
