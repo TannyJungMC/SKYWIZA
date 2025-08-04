@@ -525,7 +525,7 @@ public class GameUtils {
 
 			try {
 
-				String id = "";
+				String id = data;
 
 				// Get Block ID
 				{
